@@ -10,6 +10,7 @@ import UIKit
 
 class LoginSignUpViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var signLoginTitleLabel: UILabel!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var characterCheckBox: UIImageView!
@@ -28,6 +29,7 @@ class LoginSignUpViewController: UIViewController, UITextFieldDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         mainViewForLogin.isHidden = !fromSignup
+        signLoginTitleLabel.text = fromSignup ? "sign up to continue" : "log in to continue"
         setupViews()
         setupUI()
         signupViewModel.delegate = self

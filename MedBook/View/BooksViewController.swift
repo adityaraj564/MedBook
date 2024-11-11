@@ -60,7 +60,6 @@ class BooksViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        // Set title to "MedBook" in bold, left aligned
         let titleAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.boldSystemFont(ofSize: 30)
         ]
@@ -77,7 +76,6 @@ class BooksViewController: UIViewController {
         let logoutButton = UIBarButtonItem(image: UIImage(systemName: "xmark.circle.fill"), style: .plain, target: self, action: #selector(logoutButtonTapped))
         bookmarkButton.tintColor = .black
         logoutButton.tintColor = .red
-        // Add both buttons to the right side of the navigation bar
         navigationItem.rightBarButtonItems = [logoutButton, bookmarkButton]
     }
     
@@ -91,15 +89,11 @@ class BooksViewController: UIViewController {
     
     // Action for logout button
     @objc private func logoutButtonTapped() {
-        // Handle logout action
         print("Logout button tapped")
         // Clear user data on logout
         LocalStorage.clearUser()
         
-        // Navigate back to the Landing screen
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-        // Instantiate the view controller with the identifier
         let landingVC = storyboard.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
         if let window = UIApplication.shared.windows.first {
             window.rootViewController = UINavigationController(rootViewController: landingVC)
@@ -111,18 +105,15 @@ class BooksViewController: UIViewController {
 extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return books.count  // Return the number of books
+        return books.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Dequeue cell using the identifier
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
-        // Get the book for the current row
         noResultFound.isHidden = !books.isEmpty
         if !books.isEmpty {
             let book = books[indexPath.row]
-            // Assign the book's properties to the cell
             cell.bookName.text = book.title
             cell.authorName.text = book.authorName
             cell.rating.text = "\(book.ratingsAverage ?? 0)/5"
@@ -145,16 +136,20 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-            let saveAction = UIContextualAction(style: .normal, title: "Save") { [weak self] (action, view, completionHandler) in
-                guard let self = self else { return }
-                let book = self.books[indexPath.row]
-                
-                CoreDataManager.shared.saveBookToBookmarks(book: book, emailID: emailID)
-                completionHandler(true)
-            }
-            saveAction.backgroundColor = .systemGreen
-            return UISwipeActionsConfiguration(actions: [saveAction])
+        let saveAction = UIContextualAction(style: .normal, title: nil) { [weak self] (action, view, completionHandler) in
+            guard let self = self else { return }
+            let book = self.books[indexPath.row]
+            
+            CoreDataManager.shared.saveBookToBookmarks(book: book, emailID: emailID)
+            completionHandler(true)
         }
+        
+        saveAction.image = UIImage(systemName: "bookmark.fill")
+        saveAction.backgroundColor = .systemGreen
+
+        return UISwipeActionsConfiguration(actions: [saveAction])
+    }
+
 }
 
 extension BooksViewController: UISearchBarDelegate {

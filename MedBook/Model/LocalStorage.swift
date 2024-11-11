@@ -27,11 +27,10 @@ struct LocalStorage {
                 return
             }
         }
-        completion(nil) // If no user is found, pass nil to the completion handler
+        completion(nil)
     }
 
     
-    // Method to clear the user data, for example, on logout
     static func clearUser() {
         UserDefaults.standard.removeObject(forKey: userKey)
     }

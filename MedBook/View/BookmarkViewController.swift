@@ -66,26 +66,26 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
        }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        // Define the delete action
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [weak self] (_, _, completionHandler) in
+        let deleteAction = UIContextualAction(style: .destructive, title: nil) { [weak self] (_, _, completionHandler) in
             guard let self = self else { return }
             
-            // Get the bookmark to delete
             let bookmarkToDelete = self.bookmarks[indexPath.row]
             
-            // Delete from Core Data using email ID
             CoreDataManager.shared.deleteBookmark(bookmark: bookmarkToDelete, emailID: emailID)
             
-            // Update the local bookmarks array and table view
             self.bookmarks.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             
-            // Complete the action
             completionHandler(true)
         }
         
-        // Create a swipe configuration with the delete action
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = UIColor.red
+
         let swipeConfig = UISwipeActionsConfiguration(actions: [deleteAction])
+        swipeConfig.performsFirstActionWithFullSwipe = true
+
         return swipeConfig
     }
+
 }

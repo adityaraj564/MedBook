@@ -11,7 +11,6 @@ class LoginViewModel {
     var email: String = ""
     var password: String = ""
 
-    // Method to validate email and password for login
     func validateCredentials(completion: @escaping (Bool) -> Void) {
         LocalStorage.retrieveUser { user in
             let savedEmail = user?.email

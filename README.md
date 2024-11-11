@@ -1,1 +1,1 @@
-<img src="/Users/apple/Documents/MedBookAppPreView/MedBookPrev.gif" width="240">
+<img src="preview/MedBookPrev.gif" width="240">

@@ -5,34 +5,33 @@
 //  Created by Aditya Raj on 10/11/24.
 //
 
+import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
-    let viewModel = HomeViewModel()
-    var books: [Book] = []
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.onBooksUpdated = { [weak self] books in
-            self?.books = books
-            DispatchQueue.main.async {
-                self?.tableView.reloadData()
-            }
+        signUpButton.titleLabel?.text = "Signup"
+        loginButton.titleLabel?.text = "Login"
+        signUpButton.addTarget(self, action: #selector(signupTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+    }
+    
+    @objc func signupTapped() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginSignUpViewController") as? LoginSignUpViewController {
+            vc.fromSignup = true
+            navigationController?.pushViewController(vc, animated: true)
         }
-        
-        searchBar.delegate = self
+    }
+    
+    @objc func loginTapped() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginSignUpViewController") as? LoginSignUpViewController {
+            vc.fromSignup = false
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
-
-extension HomeViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.searchBooks(query: searchText)
-    }
-}
-
-
-

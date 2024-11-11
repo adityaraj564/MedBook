@@ -8,7 +8,9 @@
 import Foundation
 
 struct Country: Codable {
-    let name: String
-    let code: String
+    let country: String  // This matches the "country" key in the JSON response
+    
+    enum CodingKeys: String, CodingKey {
+        case country
+    }
 }
-

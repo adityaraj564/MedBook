@@ -13,6 +13,7 @@ struct Book: Codable {
     let ratingsCount: Int?
     let authorName: String?
     let coverId: Int?
+    let userEmail: String?
 
     var coverImageURL: URL? {
         guard let coverId = coverId else { return nil }

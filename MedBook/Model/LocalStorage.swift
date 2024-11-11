@@ -19,15 +19,17 @@ struct LocalStorage {
     }
     
     // Method to retrieve the user data
-    static func retrieveUser() -> User? {
+    static func retrieveUser(completion: @escaping (User?) -> Void) {
         if let savedUserData = UserDefaults.standard.data(forKey: userKey) {
             let decoder = JSONDecoder()
             if let user = try? decoder.decode(User.self, from: savedUserData) {
-                return user
+                completion(user) 
+                return
             }
         }
-        return nil
+        completion(nil) // If no user is found, pass nil to the completion handler
     }
+
     
     // Method to clear the user data, for example, on logout
     static func clearUser() {

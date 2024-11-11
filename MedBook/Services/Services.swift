@@ -17,8 +17,8 @@ class APIService {
                 completion(.failure(error))
             } else if let data = data {
                 do {
-                    let response = try JSONDecoder().decode([String: Country].self, from: data)
-                    completion(.success(Array(response.values)))
+                    let response = try JSONDecoder().decode(APIResponse.self, from: data)
+                    completion(.success(Array(response.data.values)))
                 } catch {
                     completion(.failure(error))
                 }
@@ -33,10 +33,9 @@ class APIService {
                 completion(.failure(error))
             } else if let data = data {
                 do {
-                    let response = try JSONDecoder().decode([String: [Book]].self, from: data)
-                    if let books = response["docs"] {
-                        completion(.success(books))
-                    }
+                    // Decode the response into the correct structure
+                    let response = try JSONDecoder().decode(SearchResponse.self, from: data)
+                    completion(.success(response.docs))
                 } catch {
                     completion(.failure(error))
                 }

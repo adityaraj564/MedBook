@@ -14,18 +14,6 @@ class HomeViewModel {
     
     var onBooksUpdated: (([Book]) -> Void)?
     
-    @IBAction func logoutButtonTapped(_ sender: UIButton) {
-            // Clear user data on logout
-            LocalStorage.clearUser()
-            
-            // Navigate back to the Landing screen
-            let landingVC = LandingViewController()
-            if let window = UIApplication.shared.windows.first {
-                window.rootViewController = UINavigationController(rootViewController: landingVC)
-                window.makeKeyAndVisible()
-            }
-        }
-    
     func searchBooks(query: String) {
         guard query.count >= 3 else { return }
         APIService.shared.fetchBooks(query: query) { [weak self] result in

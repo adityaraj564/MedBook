@@ -14,20 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
-        
-        if let user = LocalStorage.retrieveUser() {
-            // User is logged in, navigate directly to HomeViewController
-            let homeVC = HomeViewController()
-            window?.rootViewController = UINavigationController(rootViewController: homeVC)
-        } else {
-            // Show Login or Signup screen
-            let landingVC = LandingViewController()
-            window?.rootViewController = UINavigationController(rootViewController: landingVC)
-        }
-        
-        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

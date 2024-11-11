@@ -9,14 +9,15 @@ import Foundation
 
 struct User: Codable {
     let id: String
-    let name: String
     let email: String?
+    let password: String
+    
     
     // You can add custom encoding and decoding if needed
     enum CodingKeys: String, CodingKey {
         case id
-        case name
         case email
+        case password
     }
 }
 

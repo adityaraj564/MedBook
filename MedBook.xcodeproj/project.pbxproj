@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188F363B2CE0E36A00234510 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F363A2CE0E36A00234510 /* HomeViewController.swift */; };
+		188F363D2CE0E54100234510 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F363C2CE0E54100234510 /* LoginSignUpViewController.swift */; };
+		189451BA2CE1FAFF00A84DD1 /* SearchAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189451B92CE1FAFF00A84DD1 /* SearchAPIResponse.swift */; };
+		189451BC2CE200DE00A84DD1 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189451BB2CE200DE00A84DD1 /* BookmarkViewController.swift */; };
+		189451BF2CE204E600A84DD1 /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189451BE2CE204E600A84DD1 /* CoredataManager.swift */; };
 		189B556C2CE093EF00541843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B556B2CE093EF00541843 /* AppDelegate.swift */; };
 		189B556E2CE093EF00541843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B556D2CE093EF00541843 /* SceneDelegate.swift */; };
 		189B55702CE093EF00541843 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B556F2CE093EF00541843 /* UserModel.swift */; };
@@ -19,12 +24,18 @@
 		189B558B2CE094DE00541843 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B558A2CE094DE00541843 /* Services.swift */; };
 		189B558D2CE0952700541843 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B558C2CE0952700541843 /* SignupViewModel.swift */; };
 		189B558F2CE0954300541843 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B558E2CE0954300541843 /* HomeViewModel.swift */; };
-		189B55912CE0955800541843 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55902CE0955800541843 /* HomeViewController.swift */; };
+		189B55912CE0955800541843 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55902CE0955800541843 /* BooksViewController.swift */; };
 		189B55932CE096F600541843 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55922CE096F600541843 /* LocalStorage.swift */; };
-		189B55992CE09D3700541843 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55982CE09D3700541843 /* LandingViewController.swift */; };
+		18F85B402CE1D88B00E0A960 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */; };
+		18F85B422CE1DD2A00E0A960 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188F363A2CE0E36A00234510 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		188F363C2CE0E54100234510 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		189451B92CE1FAFF00A84DD1 /* SearchAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPIResponse.swift; sourceTree = "<group>"; };
+		189451BB2CE200DE00A84DD1 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		189451BE2CE204E600A84DD1 /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
 		189B55682CE093EF00541843 /* MedBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189B556B2CE093EF00541843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189B556D2CE093EF00541843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +50,10 @@
 		189B558A2CE094DE00541843 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		189B558C2CE0952700541843 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		189B558E2CE0954300541843 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		189B55902CE0955800541843 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		189B55902CE0955800541843 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		189B55922CE096F600541843 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
-		189B55982CE09D3700541843 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189451BD2CE204D500A84DD1 /* Database Manager */ = {
+			isa = PBXGroup;
+			children = (
+				189451BE2CE204E600A84DD1 /* CoredataManager.swift */,
+			);
+			path = "Database Manager";
+			sourceTree = "<group>";
+		};
 		189B555F2CE093EF00541843 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 		189B556A2CE093EF00541843 /* MedBook */ = {
 			isa = PBXGroup;
 			children = (
+				189451BD2CE204D500A84DD1 /* Database Manager */,
 				189B55822CE0940A00541843 /* Model */,
 				189B55832CE0941100541843 /* View */,
 				189B55842CE0941600541843 /* View Model */,
@@ -96,6 +117,8 @@
 				189B55852CE0945A00541843 /* BookModel.swift */,
 				189B55872CE0947E00541843 /* CountryModel.swift */,
 				189B55922CE096F600541843 /* LocalStorage.swift */,
+				18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */,
+				189451B92CE1FAFF00A84DD1 /* SearchAPIResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,8 +126,10 @@
 		189B55832CE0941100541843 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				189B55902CE0955800541843 /* HomeViewController.swift */,
-				189B55982CE09D3700541843 /* LandingViewController.swift */,
+				189B55902CE0955800541843 /* BooksViewController.swift */,
+				188F363A2CE0E36A00234510 /* HomeViewController.swift */,
+				188F363C2CE0E54100234510 /* LoginSignUpViewController.swift */,
+				189451BB2CE200DE00A84DD1 /* BookmarkViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +139,7 @@
 			children = (
 				189B558C2CE0952700541843 /* SignupViewModel.swift */,
 				189B558E2CE0954300541843 /* HomeViewModel.swift */,
+				18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -197,17 +223,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188F363D2CE0E54100234510 /* LoginSignUpViewController.swift in Sources */,
+				189451BA2CE1FAFF00A84DD1 /* SearchAPIResponse.swift in Sources */,
 				189B55932CE096F600541843 /* LocalStorage.swift in Sources */,
 				189B55862CE0945A00541843 /* BookModel.swift in Sources */,
+				189451BF2CE204E600A84DD1 /* CoredataManager.swift in Sources */,
 				189B558F2CE0954300541843 /* HomeViewModel.swift in Sources */,
 				189B55702CE093EF00541843 /* UserModel.swift in Sources */,
 				189B55882CE0947E00541843 /* CountryModel.swift in Sources */,
 				189B558B2CE094DE00541843 /* Services.swift in Sources */,
-				189B55912CE0955800541843 /* HomeViewController.swift in Sources */,
+				18F85B402CE1D88B00E0A960 /* APIResponse.swift in Sources */,
+				18F85B422CE1DD2A00E0A960 /* LoginViewModel.swift in Sources */,
+				189B55912CE0955800541843 /* BooksViewController.swift in Sources */,
 				189B55762CE093EF00541843 /* MedBook.xcdatamodeld in Sources */,
 				189B556C2CE093EF00541843 /* AppDelegate.swift in Sources */,
 				189B558D2CE0952700541843 /* SignupViewModel.swift in Sources */,
-				189B55992CE09D3700541843 /* LandingViewController.swift in Sources */,
+				189451BC2CE200DE00A84DD1 /* BookmarkViewController.swift in Sources */,
+				188F363B2CE0E36A00234510 /* HomeViewController.swift in Sources */,
 				189B556E2CE093EF00541843 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

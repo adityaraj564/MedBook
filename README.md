@@ -87,7 +87,7 @@ MedBook is built using the **Model-View-ViewModel (MVVM)** architecture pattern,
 
 ```
 MedBook
-├── Database Manager   Local Storage
+├── Database Manager   # Local Storage
 ├── Models             # Data models (User, Book, Country)
 ├── ViewModels         # Business logic and data binding (SignupViewModel, HomeViewModel)
 ├── Views              # UI and view controllers (LandingViewController, SignupViewController)

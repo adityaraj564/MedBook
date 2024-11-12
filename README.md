@@ -13,9 +13,14 @@ MedBook is an iOS/iPadOS app that allows users to search for books, sort them by
 - [API References](#api-references)
 - [Acknowledgements](#acknowledgements)
 
-## Screenshots
+## Preview
 
 <img src="preview/MedBookPrev.gif" width="240">
+
+## Screenshots
+
+<img src="resources" width="240">
+
 
 
 ## Features

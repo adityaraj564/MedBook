@@ -19,15 +19,7 @@ MedBook is an iOS/iPadOS app that allows users to search for books, sort them by
 
 ## Screenshots
 
-<img src="resources/screenshot-1.png" width="240">
-<img src="resources/screenshot-2.png" width="240">
-<img src="resources/screenshot-3.png" width="240">
-<img src="resources/screenshot-4.png" width="240">
-<img src="resources/screenshot-5.png" width="240">
-<img src="resources/screenshot-6.png" width="240">
-<img src="resources/screenshot-7.png" width="240">
-<img src="resources/screenshot-8.png" width="240">
-<img src="resources/screenshot-9.png" width="240">
+<img src="resources/screenshot-1.png" width="240"> <img src="resources/screenshot-2.png" width="240"> <img src="resources/screenshot-3.png" width="240"> <img src="resources/screenshot-4.png" width="240"> <img src="resources/screenshot-5.png" width="240"> <img src="resources/screenshot-6.png" width="240"> <img src="resources/screenshot-7.png" width="240"> <img src="resources/screenshot-8.png" width="240"> <img src="resources/screenshot-9.png" width="240">
 
 
 ## Features

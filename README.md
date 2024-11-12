@@ -13,6 +13,11 @@ MedBook is an iOS/iPadOS app that allows users to search for books, sort them by
 - [API References](#api-references)
 - [Acknowledgements](#acknowledgements)
 
+## Screenshots
+
+<img src="preview/MedBookPrev.gif" width="240">
+
+
 ## Features
 
 ### Level 1: User Authentication
@@ -113,3 +118,6 @@ MedBook
 - OpenLibrary for the book search API
 - First.org for the country list API
 - Inspired by clean architecture and MVVM design principles
+
+
+

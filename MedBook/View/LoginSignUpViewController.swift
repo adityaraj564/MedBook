@@ -105,6 +105,7 @@ class LoginSignUpViewController: UIViewController, UITextFieldDelegate, UIPicker
         errorMessage.isHidden = flag
         errorMessage.text = message
         errorMessage.textColor = textColor
+        errorMessage.numberOfLines = 2
     }
     
     @IBAction func letsGoButtonTapped(_ sender: UIButton) {

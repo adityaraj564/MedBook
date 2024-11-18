@@ -26,6 +26,7 @@
 		189B558F2CE0954300541843 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B558E2CE0954300541843 /* HomeViewModel.swift */; };
 		189B55912CE0955800541843 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55902CE0955800541843 /* BooksViewController.swift */; };
 		189B55932CE096F600541843 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55922CE096F600541843 /* LocalStorage.swift */; };
+		18C568402CEB4D36002CB639 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189B557C2CE093F100541843 /* Info.plist */; };
 		18F85B402CE1D88B00E0A960 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */; };
 		18F85B422CE1DD2A00E0A960 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -210,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C568402CEB4D36002CB639 /* Info.plist in Resources */,
 				189B55782CE093F100541843 /* Assets.xcassets in Resources */,
 				189B557B2CE093F100541843 /* Base in Resources */,
 				189B55732CE093EF00541843 /* Base in Resources */,

@@ -26,7 +26,6 @@
 		189B558F2CE0954300541843 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B558E2CE0954300541843 /* HomeViewModel.swift */; };
 		189B55912CE0955800541843 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55902CE0955800541843 /* BooksViewController.swift */; };
 		189B55932CE096F600541843 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B55922CE096F600541843 /* LocalStorage.swift */; };
-		18C568402CEB4D36002CB639 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189B557C2CE093F100541843 /* Info.plist */; };
 		18F85B402CE1D88B00E0A960 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */; };
 		18F85B422CE1DD2A00E0A960 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		189B55752CE093EF00541843 /* MedBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedBook.xcdatamodel; sourceTree = "<group>"; };
 		189B55772CE093F100541843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189B557A2CE093F100541843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		189B557C2CE093F100541843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189B55852CE0945A00541843 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		189B55872CE0947E00541843 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		189B558A2CE094DE00541843 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -53,6 +51,7 @@
 		189B558E2CE0954300541843 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		189B55902CE0955800541843 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		189B55922CE096F600541843 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		18C568452CEB5034002CB639 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F85B3F2CE1D88B00E0A960 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		18F85B412CE1DD2A00E0A960 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +104,7 @@
 				189B55712CE093EF00541843 /* Main.storyboard */,
 				189B55772CE093F100541843 /* Assets.xcassets */,
 				189B55792CE093F100541843 /* LaunchScreen.storyboard */,
-				189B557C2CE093F100541843 /* Info.plist */,
+				18C568452CEB5034002CB639 /* Info.plist */,
 				189B55742CE093EF00541843 /* MedBook.xcdatamodeld */,
 			);
 			path = MedBook;
@@ -211,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C568402CEB4D36002CB639 /* Info.plist in Resources */,
 				189B55782CE093F100541843 /* Assets.xcassets in Resources */,
 				189B557B2CE093F100541843 /* Base in Resources */,
 				189B55732CE093EF00541843 /* Base in Resources */,
